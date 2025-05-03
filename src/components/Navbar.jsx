@@ -45,7 +45,7 @@ const Navbar = () => {
                 onClick={() => {setActiveLink(link.href); closeMenu(); }} 
                 className={`nav-link 
                   ${activeLink === link.href
-                  ? 'text-blue-200 after:w-full'
+                  ? 'text-blue-700 after:w-full'
                   : menuOpen
                     ? 'text-white'
                     : 'text-gray-600 hover:text-gray-900'
