@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+    @apply text-sm font-medium font-Satoshi relative after:absolute after:bottom-0 after:left-0 after:h-0.5 hover:after:w-full after:bg-blue-600 after:transition-all 
+}
