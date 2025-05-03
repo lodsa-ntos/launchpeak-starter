@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaRegFutbol } from "react-icons/fa"
+import { FaArrowRight } from "react-icons/fa6"
 
 function HeroSection() {
 
@@ -11,7 +11,8 @@ function HeroSection() {
             
             
             <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold font-Satoshi leading-tight'>
-                We turn ideas into 
+                <span className='inline-block'>We turn ideas into </span>
+                
                 <span className='text-blue-600 relative inline-block'>pages that sell</span>
             </h1>
 
@@ -19,10 +20,10 @@ function HeroSection() {
                 Modern, responsive and conversion-optimised landing pages made with React and Tailwind.
             </p>
 
-            <div>
+            <div className='gap-3 max-w-md '>
                 <button className="btn">
                     <span>Começar agora</span>
-                    <FaRegFutbol />
+                    <FaArrowRight />
                 </button>
 
                 <p className="text-xs text-slate-600 py-4 font-Satoshi font-bold">

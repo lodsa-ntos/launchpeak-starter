@@ -8,7 +8,7 @@
 
 /* Button Hero Section */
 .btn {
-    @apply w-fit flex items-center justify-between gap-2 border border-gray-500 bg-white text-blue-800 rounded-md px-5 py-2 focus:border-blue-600 focus:right-2 focus:ring-blue-100 transition-all duration-300;
+    @apply w-fit flex items-center justify-between gap-2 border border-gray-500 bg-blue-600 text-white rounded-md px-5 py-2 hover:shadow-lg hover:shadow-blue-100 focus:border-blue-600 focus:right-2 focus:ring-blue-100 transition-all duration-300;
   }
   
   .btn span {
