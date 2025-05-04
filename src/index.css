@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-  scroll-padding-top: 100px;
-  @apply scroll-smooth;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .nav-link {
