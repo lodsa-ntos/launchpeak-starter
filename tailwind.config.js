@@ -25,12 +25,17 @@ export default {
           "0%": { transform: "scale(0.8)" },
           "50%": { transform: "scale(1.8)" },
           "100%": { transform: "scale(0.8)" },
-        }
+        },
+        walk: {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         movingY: "move 3s linear infinite",
         rotating: "rotate 15s linear infinite",
         scalingUp: "scaleUp 3s linear infinite",
+        walkingX: "walk 25s linear infinite",
       },
       fontFamily: {
         Satoshi: ["Satoshi", "sans-serif"],
