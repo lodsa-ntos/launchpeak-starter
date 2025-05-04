@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import CompanyLogo from '../components/CompanyLogo';
 import PurposeSection from '../components/PurposeSection';
-import AboutSection from '../components/AboutSection';
+import FeatureSection from '../components/FeatureSection';
 import './../index.css'
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
                 <HeroSection />
                 <CompanyLogo />
                 <PurposeSection />
-                <AboutSection />
+                <FeatureSection />
             </div>
         </main>
     )
