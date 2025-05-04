@@ -34,8 +34,10 @@ function HeroSection() {
         </div>
 
         {/* Hero Section - Right Col */}
-        <div className='w-full md:w-1/2 '>
-            <img src="images/hero_mockup.jpg" alt="hero image" />
+        <div className='w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12 '>
+            <div className='relative '>
+                <img src="images/hero_mockup.jpg" alt="hero image" className='rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300'/>
+            </div>
         </div>
     </section>
   )
