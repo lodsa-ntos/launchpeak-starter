@@ -1,8 +1,8 @@
 import React from 'react'
 
-const CompanyLogo = () => {
+function CompanyLogo(){
   return (
-    <div>CompanyLogo</div>
+    <div className='w-full container mx-auto py-20 flex'>CompanyLogo</div>
   )
 }
 

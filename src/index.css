@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 .nav-link {
-    @apply text-sm font-medium font-Satoshi relative after:absolute after:bottom-0 after:left-0 after:h-0.5 hover:after:w-full after:bg-blue-600 after:transition-all 
+  @apply text-sm font-medium font-Satoshi relative after:absolute after:bottom-0 after:left-0 after:h-0.5 hover:after:w-full after:bg-blue-600 after:transition-all 
 }
 
 /* Button Hero Section */
 .btn {
-    @apply w-fit flex items-center justify-between gap-2 border border-gray-500 bg-[#6248d6] text-white rounded-md px-5 py-2 hover:shadow-lg hover:shadow-blue-100 focus:border-blue-600 focus:right-2 focus:ring-blue-100 transition-all duration-300;
-  }
+  @apply w-fit flex items-center justify-between gap-2 border border-gray-500 bg-[#6248d6] text-white rounded-md px-5 py-2 hover:shadow-lg hover:shadow-blue-100 focus:border-blue-600 focus:right-2 focus:ring-blue-100 transition-all duration-300;
+}
   
-  .btn span {
+.btn span {
     @apply font-bold;
-  }
+}
   
-  .btn:hover {
-    @apply opacity-90;
-  }
+.btn:hover {
+  @apply opacity-90;
+}
