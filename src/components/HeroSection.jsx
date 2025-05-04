@@ -35,7 +35,7 @@ function HeroSection() {
 
         {/* Hero Section - Right Col */}
         <div className='w-full md:w-1/2 '>
-            Right
+            <img src="images/hero_mockup.jpg" alt="hero image" />
         </div>
     </section>
   )
