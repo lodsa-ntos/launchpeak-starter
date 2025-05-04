@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import CompanyLogo from '../components/CompanyLogo';
+import PurposeSection from '../components/PurposeSection';
 import './../index.css'
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
                 <Navbar />
                 <HeroSection />
                 <CompanyLogo />
+                <PurposeSection />
             </div>
         </main>
     )
