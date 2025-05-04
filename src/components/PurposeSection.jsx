@@ -1,8 +1,6 @@
 import React from 'react'
 
-
-
-const PurposeSection = () => {
+function PurposeSection() {
     const purposeData = [
         {
             icon: "1️⃣",

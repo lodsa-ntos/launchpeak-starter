@@ -20,6 +20,7 @@ function CompanyLogo(){
     vercel,
     youtube
   ]
+  
   return (
     <div className='w-full overflow-hidden container mx-auto py-20 gap-8 flex sm:flex-row flex-col sm:items-center items-start'>
 

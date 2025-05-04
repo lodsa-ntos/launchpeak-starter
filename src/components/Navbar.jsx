@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { RiMenu4Line, RiCloseLine } from 'react-icons/ri'
 
-const Navbar = () => {
+function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('#home');

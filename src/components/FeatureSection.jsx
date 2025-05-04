@@ -1,8 +1,8 @@
 import React from 'react'
 
-const FeatureSection = () => {
+function FeatureSection() {
   return (
-    <section id='features'>AboutSection</section>
+    <section id='features' className='max-w-7xl mx-auto px-4 py-16 '>AboutSection</section>
   )
 }
 
