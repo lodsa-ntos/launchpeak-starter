@@ -19,8 +19,8 @@ const Navbar = () => {
       <div className='w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16'>
         {/* Logo */}
         <div className='flex items-center cursor-pointer'>
-        <span className='text-xl font-Lobster text-[#3d55cc] opacity-85 hover:opacity-100 transition-opacity'>Launch</span>
-          <span className='text-xl font-Lobster text-orange-600 opacity-100 hover:opacity-85 transition-opacity'>Peak.</span>
+        <span className='text-xl font-Lobster text-[#6248d6] opacity-85 hover:opacity-100 transition-opacity'>Launch</span>
+          <span className='text-xl font-Lobster text-blue-600 opacity-100 hover:opacity-85 transition-opacity'>Peak.</span>
         </div>
 
         {/* Mobile Menu */}
