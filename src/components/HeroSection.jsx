@@ -13,7 +13,7 @@ function HeroSection() {
             <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold font-Satoshi leading-tight'>
                 <span className='inline-block'>We turn ideas into </span>
                 
-                <span className='text-blue-600 relative inline-block'>pages that sell</span>
+                <span className='text-[#3d55cc] relative inline-block'>pages that sell</span>
             </h1>
 
             <p className='text-gray-600 text-lg md:text-xl max-w-xl font-Satoshi'>
