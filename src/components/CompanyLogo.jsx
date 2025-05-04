@@ -3,9 +3,9 @@ import slack from '../assets/companies/Slack.png'
 import amazon from '../assets/companies/Amazon.png'
 import google from '../assets/companies/Google.png'
 import github from '../assets/companies/Github.png'
-import woocommerce from '../assets/companies/Woocommerce.png'
+import notion from '../assets/companies/Notion.png'
 import netflix from '../assets/companies/Netflix.png'
-import worten from '../assets/companies/Worten.png'
+import vercel from '../assets/companies/Vercel.png'
 import youtube from '../assets/companies/Youtube.png'
 
 function CompanyLogo(){
@@ -15,9 +15,9 @@ function CompanyLogo(){
     amazon,
     google,
     github,
-    woocommerce,
+    notion,
     netflix,
-    worten,
+    vercel,
     youtube
   ]
   return (
