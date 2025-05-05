@@ -37,7 +37,7 @@ function PurposeSection() {
 
                             <div>
                                 <h3 className='text-xl font-semibold font-Satoshi text-gray-900 mb-2'>{item.title}</h3>
-                                <p className='text-gray-600'>{item.description}</p>
+                                <p className='text-gray-600 font-Satoshi'>{item.description}</p>
                             </div>
                         </div>
                     ))}
