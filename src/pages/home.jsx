@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection';
 import CompanyLogo from '../components/CompanyLogo';
 import PurposeSection from '../components/PurposeSection';
 import FeatureSection from '../components/FeatureSection';
+import ExempleSection from '../components/ExempleSection';
 import './../index.css'
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
                 <CompanyLogo />
                 <PurposeSection />
                 <FeatureSection />
+                <ExempleSection />
             </div>
         </main>
     )
