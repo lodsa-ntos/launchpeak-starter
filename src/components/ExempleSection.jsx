@@ -31,25 +31,25 @@ function ExempleSection() {
       title: 'Example 1',
       description: 'Description for example 1',
       imgSrc: 'images/varition/website.jpg',
-      categories: ['Category 1', 'Category 2'],
+      categories: ['Category 1', 'Category 2', 'Category 3'],
     },
     {
       title: 'Example 2',
       description: 'Description for example 2',
       imgSrc: 'images/varition/simple.jpg',
-      categories: ['Category 1', 'Category 2'],
+      categories: ['Category 1', 'Category 2', 'Category 3'],
     },
     {
       title: 'Example 3',
       description: 'Description for example 3',
       imgSrc: 'images/varition/interior.jpg',
-      categories: ['Category 1', 'Category 2'],
+      categories: ['Category 1', 'Category 2', 'Category 3'],
     },
     {
       title: 'Example 4',
       description: 'Description for example 4',
       imgSrc: 'images/varition/ux.jpg',
-      categories: ['Category 1', 'Category 2'],
+      categories: ['Category 1', 'Category 2', 'Category 3'],
     }
   ];
 
@@ -75,7 +75,6 @@ function ExempleSection() {
               }}
               onSwiper={(swiper) => {
                 swiperWrapperRef.current = swiper.wrapperEl;
-
               }}
             >
               {slides.map((slide, index) => (
