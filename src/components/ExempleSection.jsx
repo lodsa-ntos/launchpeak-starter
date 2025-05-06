@@ -50,7 +50,31 @@ function ExempleSection() {
       description: 'Description for example 4',
       imgSrc: 'images/varition/ux.jpg',
       categories: ['Category 1', 'Category 2', 'Category 3'],
-    }
+    },
+    {
+      title: 'Example 5',
+      description: 'Description for example 5',
+      imgSrc: 'images/varition/website.jpg',
+      categories: ['Category 1', 'Category 2', 'Category 3'],
+    },
+    {
+      title: 'Example 6',
+      description: 'Description for example 6',
+      imgSrc: 'images/varition/simple.jpg',
+      categories: ['Category 1', 'Category 2', 'Category 3'],
+    },
+    {
+      title: 'Example 7',
+      description: 'Description for example 7',
+      imgSrc: 'images/varition/interior.jpg',
+      categories: ['Category 1', 'Category 2', 'Category 3'],
+    },
+    {
+      title: 'Example 8',
+      description: 'Description for example 8',
+      imgSrc: 'images/varition/ux.jpg',
+      categories: ['Category 1', 'Category 2', 'Category 3'],
+    },
   ];
 
   return (
@@ -71,9 +95,13 @@ function ExempleSection() {
               centerInsufficientSlides={true}
               pagination={{clickable: true}}
               breakpoints={{
-                320: {spaceBetween:40},
-                650: {spaceBetween:30},
-                1000: {spaceBetween:20},
+                320:  { slidesPerView: 1.2, spaceBetween: 40 },
+                520:  { slidesPerView: 1.4, spaceBetween: 30 },
+                650:  { slidesPerView: 2.2, spaceBetween: 24 },
+                800:  { slidesPerView: 2.4, spaceBetween: 24 },
+                1000: { slidesPerView: 2.6,   spaceBetween: 24 },
+                1200: { slidesPerView: 2.8, spaceBetween: 24 },
+                1400: { slidesPerView: 3, spaceBetween: 24 },
               }}
               onSwiper={(swiper) => {
                 swiperWrapperRef.current = swiper.wrapperEl;
@@ -95,13 +123,7 @@ function ExempleSection() {
                       <p>{slide.description}</p>
                     </div>
                     <div className='footer-swip'>
-                      <div className='category'>
-                        {slide.categories.map((category, indx) => (
-                          <span key={indx} style={{"--i" : indx + 1}}>
-                            {category}
-                          </span>
-                        ))}
-                      </div>
+                      
                       <button className='btn-swip group'>
                         <span className='label'> More...</span>
                       </button>
