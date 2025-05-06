@@ -63,10 +63,12 @@ function ExempleSection() {
             <Swiper modules={[Pagination]}
               grabCursor
               initialSlide={2}
-              centeredSlides
-              slidesPerView="auto"
+              centeredSlides={true}
+              slidesPerView={"auto"}
+              spaceBetween={15}
               speed={800}
-              slideToClickedSlide
+              slideToClickedSlide={true}
+              centerInsufficientSlides={true}
               pagination={{clickable: true}}
               breakpoints={{
                 320: {spaceBetween:40},
