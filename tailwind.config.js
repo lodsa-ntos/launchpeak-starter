@@ -6,11 +6,12 @@ export default {
   ],
   theme: {
     screens: {
-      sm: "640px",   // Mobile
-      md: "768px",   // Tablet
-      lg: "1024px",  // Laptop
-      xl: "1280px",  // Desktop
-      '2xl': "1536px" // Ultra-wide
+      xs: 0, // Extra small
+      sm: "576px", // Mobile
+      md: "768px", // Tablet
+      lg: "992px", // Laptop
+      xl: "1200px", // Desktop
+      xxl: "1400px", // Ultra-wide
     },
     extend: {
       keyframes: {
