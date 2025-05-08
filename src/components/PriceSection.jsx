@@ -1,8 +1,10 @@
 import React from 'react'
 
-const PriceSection = () => {
+function PriceSection() {
   return (
-    <div>PriceSection</div>
+    <section>
+        <div>PriceSection</div>
+    </section>
   )
 }
 

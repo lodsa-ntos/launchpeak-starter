@@ -12,7 +12,7 @@ function HeroSection() {
 
             <div className='flex items-center gap-2 bg-gray-50 w-fit px-4 py-2 rounded-full hover:bg-gray-100 transition-colors cursor-pointer font-Satoshi font-medium group'>
                 <span className='text-purple-600 grupo-hover:text-amber-300 group-hover:scale-110 transition-transform'><PiRocketLaunchFill /></span>
-                <span className='text-sm font-medium font-Satoshi'>Landing pages para Startups & Criadores</span>
+                <span className='text-sm font-medium font-Satoshi'>Landing pages for Startups & Creators</span>
             </div>            
             
             <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold font-Satoshi leading-tight'>
