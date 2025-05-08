@@ -7,7 +7,9 @@ function ExempleSection() {
         
         <h2 className='text-3xl font-semibold font-Satoshi text-gray-800 mb-10'>Real use cases. Real results.</h2>
 
-        
+        <div className="row mt-5">
+          
+        </div>
 
     </section>
   )
