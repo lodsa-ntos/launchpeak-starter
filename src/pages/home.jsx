@@ -5,6 +5,7 @@ import CompanyLogo from '../components/CompanyLogo';
 import PurposeSection from '../components/PurposeSection';
 import FeatureSection from '../components/FeatureSection';
 import ExempleSection from '../components/ExempleSection';
+import PriceSection from '../components/PriceSection';
 import './../index.css'
 
 function Home() {
@@ -19,6 +20,8 @@ function Home() {
                 <PurposeSection />
                 <FeatureSection />
                 <ExempleSection />
+                <PriceSection />
+
             </div>
         </main>
     )
