@@ -9,7 +9,7 @@ function ExempleSection() {
         <div className="container">
           <div className="text-center">
             <div className="title-span">
-              <h2 className='text-3xl font-semibold font-Satoshi text-gray-800 mb-10 container mx-auto px- sm:px-6 lg:px-8'>Real use cases. Real results.</h2>
+              <h2 className='text-3xl font-semibold font-Satoshi text-gray-800 mb-10 container mx-auto px-4 sm:px-6 lg:px-8'>Real use cases. Real results.</h2>
             </div>
           </div>
 
