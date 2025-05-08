@@ -1,12 +1,10 @@
 import React from 'react'
-import imgCard1 from '../assets/usecases/ux.jpg'
 import imgCard2 from '../assets/usecases/analysis.jpg'
-import imgCard3 from '../assets/usecases/interior.jpg'
 
 function ExempleSection() {
 
   return (
-    <section id='examples' className='w-full bg-lp-bg py-16 px-4 sm:px-6 md:px-8 padd blog-sec'>
+    <section id='examples' className='w-full bg-lp-bg py-16 px-4 sm:px-6 md:px-8'>
 
         <div className="container">
           <div className="text-center">
