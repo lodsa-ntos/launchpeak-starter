@@ -27,7 +27,7 @@ function HeroSection() {
 
             <div className='gap-3 max-w-md '>
                 <button className="btn">
-                    <span>Get started</span>
+                    <span>Launch Your Page Today</span>
                     <FaArrowRight />
                 </button>
 
