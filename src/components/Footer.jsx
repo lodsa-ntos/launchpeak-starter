@@ -36,6 +36,8 @@ function Footer() {
               </div>
               <p className='text-gray-600 mb-6 md:w-3/4 font-Satoshi'>Build with purpose. High-converting landing pages start here. Let’s make it happen.🌐</p>
 
+              <p className='text-gray-600 mb-2 md:w-3/4 font-medium font-Satoshi'>Find me on:</p>
+
               <div className='flex gap-4'>
                 <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-lp-blue hover:text-white transition-all duration-200'><FaFacebookF className='size-5'/></a>
 
