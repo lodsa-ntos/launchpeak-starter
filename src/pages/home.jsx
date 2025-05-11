@@ -7,6 +7,7 @@ import FeatureSection from '../components/FeatureSection';
 import ExempleSection from '../components/ExempleSection';
 import PriceSection from '../components/PriceSection';
 import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
 import './../index.css'
 
 function Home() {
@@ -23,6 +24,7 @@ function Home() {
                 <ExempleSection />
                 <PriceSection />
                 <ContactSection />
+                <Footer />
 
             </div>
         </main>

@@ -1,8 +1,17 @@
 import React from 'react'
 
-const Footer = () => {
+function Footer() {
+
+
   return (
-    <div>Footer</div>
+    <footer className='bg-gray-50'>
+      <div className='container mx-auto py-16 px-4 sm:px-6 lg:px-8'>
+        <div>
+          {/* Logo */}
+          
+        </div>
+      </div>
+    </footer>
   )
 }
 
