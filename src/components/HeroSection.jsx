@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa6"
 import { PiRocketLaunchFill } from "react-icons/pi"
+import { MdOutlineLocalSee } from "react-icons/md"
 
 function HeroSection() {
 
@@ -26,10 +27,18 @@ function HeroSection() {
             </p>
 
             <div className='gap-3 max-w-md '>
-                <button className="btn">
-                    <span>Launch Your Page Today</span>
-                    <FaArrowRight />
-                </button>
+                <div className='flex items-center gap-2'>
+                    <button className="btn">
+                        <span>Get Started</span>
+                    </button>
+
+                    <button className="w-fit px-5 py-2">
+                        <a className="inline-flex gap-2 items-center justify-between" href="#examples">
+                            <span aria-hidden="true" className='font-medium text-base'>See examples</span>
+                        <FaArrowRight className='size-3 -mb-1'/>
+                        </a>
+                    </button>
+                </div>
 
                 <p className="text-xs text-[#b996ff] py-4 font-Satoshi font-bold">
                 Delivered fast. No hidden fees. Ready to convert visitors into buyers.

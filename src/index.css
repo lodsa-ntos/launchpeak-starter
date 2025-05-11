@@ -30,7 +30,7 @@ html {
 }
   
 .btn span {
-  @apply font-bold;
+  @apply font-semibold;
 }
   
 .btn:hover {
