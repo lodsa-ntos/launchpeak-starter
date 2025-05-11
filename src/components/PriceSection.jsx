@@ -86,7 +86,8 @@ function PriceSection() {
                         ${plan.mostPopular 
                             ? 'relative border-lp-purple p-8 shadow-lg bg-white rounded-2xl flex flex-col border-2'
 
-                            : 'relative border border-slate-200 p-8 shadow-lg bg-white rounded-2xl flex flex-col'}
+                            : 'relative border border-slate-200 p-8 shadow-lg bg-white rounded-2xl flex flex-col'
+                        }
                     `}>
                 
                         <h3 className='text-lg font-Satoshi font-semibold leading-5'>{plan.title}</h3>
