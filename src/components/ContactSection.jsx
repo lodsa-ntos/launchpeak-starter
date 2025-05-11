@@ -24,7 +24,7 @@ const ContactSection = () => {
               <input type="email" placeholder='Enter your e-mail address' className='w-full sm:w-auto md:w-80 px-4 sm:px-6 py-3 sm:py-4 rounded-xl sm:rounded-l-xl sm:rounded-r-none focus:outline-none font-Satoshi bg-white'
               />
               
-              <button className='text-white bg-lp-purple w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-l-none sm:rounded-r-lg flex items-center gap-2'>
+              <button className='text-white bg-lp-purple w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-l-none sm:rounded-r-lg flex items-center gap-2 hover:bg-purple-600 transition'>
                 <span>Discover</span>
                 <FiArrowRight className='size-5'/>
               </button>
