@@ -34,7 +34,7 @@ function Footer() {
                 <span className='text-xl font-Lobster text-lp-purple opacity-85 hover:opacity-100 transition-opacity'>Launch</span>
                 <span className='text-xl font-Lobster text-blue-600 opacity-100 hover:opacity-85 transition-opacity'>Peak.</span>
               </div>
-              <p className='text-gray-600 mb-6 md:w-3/4 font-Satoshi'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugiat deleniti dignissimos facilis, voluptas at, libero tempore ipsum ex a molestias perferendis odio quaerat eius deserunt non aliquid harum sunt?</p>
+              <p className='text-gray-600 mb-6 md:w-3/4 font-Satoshi'>Build with purpose. High-converting landing pages start here. Let’s make it happen.🌐</p>
 
               <div className='flex gap-4'>
                 <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-lp-blue hover:text-white transition-all duration-200'><FaFacebookF className='size-5'/></a>
