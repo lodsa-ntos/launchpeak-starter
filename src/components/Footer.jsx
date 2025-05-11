@@ -2,6 +2,7 @@ import React from 'react'
 import { FaFacebookF } from "react-icons/fa"
 import { BsTwitterX } from "react-icons/bs"
 import { FaLinkedinIn } from "react-icons/fa"
+import { SiFiverr } from "react-icons/si"
 
 
 const footerLinks = {
@@ -18,7 +19,11 @@ const footerLinks = {
   contact: [
     { name: 'WhatsApp', href: '#' },
     { name: 'Email', href: 'mailto:lodney.santoss@gmail.com' },
-    { name: 'Fiverr Profile', href: '#' },
+    { name: (
+      <>
+      Order directly on <span className='w-12 h-12 text-green-500 hover:text-green-600 font-bold'>Fiverr.</span> 
+      </>
+    ), href: '#' },
   ],
 }
 

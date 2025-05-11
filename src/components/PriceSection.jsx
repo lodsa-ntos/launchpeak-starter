@@ -46,6 +46,7 @@ const pricingPlans = [
       "SEO advanced",
       "Contact form integration",
       "Priority delivery (48h)",
+      "+ Dedicated support via WhatsApp",
     ],
     cta: "Get Started",
     microtext: "No hidden fees. One-time payment.",

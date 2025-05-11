@@ -32,7 +32,7 @@ function HeroSection() {
                 </button>
 
                 <p className="text-xs text-[#b996ff] py-4 font-Satoshi font-bold">
-                Ideal for launching products, applications or personal portfolios.
+                Delivered fast. No hidden fees. Ready to convert visitors into buyers.
                 </p>
             </div>
             

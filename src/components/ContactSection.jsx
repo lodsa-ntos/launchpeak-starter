@@ -23,7 +23,7 @@ const ContactSection = () => {
             <div className='flex flex-col sm:flex-row gap-4 sm:gap-0'>
 
               <button className='text-white bg-lp-purple w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-l-lg sm:rounded-r-lg flex items-center gap-2 hover:bg-purple-600 transition'>
-                <span>Let’s create something amazing!</span>
+                <span>Let’s create something amazing! 🎨</span>
                 <FiArrowRight className='size-5'/>
               </button>
             </div>
