@@ -123,7 +123,7 @@ function PriceSection() {
                                 
                                 ${
                                     plan.mostPopular 
-                                    ? 'text-white bg-lp-purple-light hover:bg-lp-purple shadow-md' 
+                                    ? 'text-white bg-lp-purple hover:bg-lp-purple-light shadow-md' 
                                     : 'text-lp-purple bg-purple-50 hover:bg-purple-100 '
                                 }
                             `}
