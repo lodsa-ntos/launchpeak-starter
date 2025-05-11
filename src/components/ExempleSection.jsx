@@ -5,6 +5,9 @@ import imgCard3 from '../assets/usecases/ux.jpg'
 import { FaReact } from "react-icons/fa"
 import { RiTailwindCssFill } from "react-icons/ri"
 import { DiResponsive } from "react-icons/di"
+import { HiMiniDevicePhoneMobile } from "react-icons/hi2"
+import { TbBrandFramerMotion } from "react-icons/tb"
+import { RiSeoLine } from "react-icons/ri"
 
 
 const cardsdata = [
@@ -12,16 +15,31 @@ const cardsdata = [
     img: imgCard1,
     title: "Launch your course with clarity and style",
     description: "Boost your online course signups",
+    Badge: [
+      { icon: <FaReact />, color: "blue", label: "React.js", link: "https://react.dev/" },
+      { icon: <RiTailwindCssFill />, color: "cyan", label: "TailwindCSS", link: "https://tailwindcss.com/" },
+      { icon: <DiResponsive />, color: "purple", label: "Responsive", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
+    ]
   },
   {
     img: imgCard2,
     title: "Transform your space with stunning interior design",
     description: "Elevate your home with our expert design services",
+    Badge: [
+      { icon: <FaReact />, color: "blue", label: "React.js", link: "https://react.dev/" },
+      { icon: <HiMiniDevicePhoneMobile />, color: "cyan", label: "Mobile-First UI", link: "https://tailwindcss.com/" },
+      { icon: <TbBrandFramerMotion />, color: "purple", label: "Framer Motion", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
+    ]
   },
   {
     img: imgCard3,
     title: "Crafting seamless user experiences",
     description: "Designing intuitive interfaces for your digital products",
+    Badge: [
+      { icon: <FaReact />, color: "blue", label: "React.js", link: "https://react.dev/" },
+      { icon: <RiTailwindCssFill />, color: "cyan", label: "TailwindCSS", link: "https://tailwindcss.com/" },
+      { icon: <RiSeoLine />, color: "purple", label: "SEO Optimized", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
+    ]
   },
 ]
 
@@ -47,16 +65,22 @@ function ExempleSection() {
 
           <div className="border-t border-[#EBEBEB] p-5 flex flex-col justify-between flex-1">
 
-            <div className="flex items-center gap-3 mb-3 flex-wrap">
-              <Badge icon={<FaReact />} color="blue" label="React.js" link="https://react.dev/" />
-              <Badge icon={<RiTailwindCssFill />} color="cyan" label="TailwindCSS" link="https://tailwindcss.com/" />
-              <Badge icon={<DiResponsive />} color="purple" label="Responsive" link="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" />
+            <div className="flex items-center gap-3 flex-wrap">
+              {card.Badge && card.Badge.map((badge, index) => (
+                <Badge
+                  key={index}
+                  icon={badge.icon}
+                  color={badge.color}
+                  label={badge.label}
+                  link={badge.link}
+                />
+              ))}
             </div>
             
-            <h5 className="text-lg font-bold font-Satoshi leading-tight mb-2">
+            <h5 className="text-lg text-start font-bold font-Satoshi leading-tight mb-3 mt-2">
               {card.title}
             </h5>
-            <p className="font-Satoshi text-sm text-gray-500">
+            <p className="text-start font-Satoshi text-sm text-gray-500">
               {card.description}
             </p>
           </div>
@@ -71,7 +95,7 @@ function ExempleSection() {
 // Badge Component
 const Badge = ({ icon, color, label, link }) => (
   <a
-    className={`flex items-center gap-1.5 rounded-full bg-${color}-50 px-2.5 py-1 text-xs font-medium text-${color}-600 ring-1 ring-${color}-700/10 ring-inset font-Satoshi tracking-tight`}
+    className={`flex items-center gap-0.5 rounded-full bg-${color}-50 px-2.5 py-1 text-xs font-medium text-${color}-600 ring-1 ring-${color}-700/10 ring-inset font-Satoshi tracking-tight`}
     href={link}
     target="_blank"
     rel="noopener noreferrer"
