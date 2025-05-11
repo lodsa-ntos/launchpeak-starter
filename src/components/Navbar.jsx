@@ -36,7 +36,6 @@ function Navbar() {
               { href: '#features', label: 'Features' },
               { href: '#examples', label: 'Examples' },
               { href: '#plans', label: 'Plans' },
-              { href: '#faqs', label: 'FAQs' },
               { href: '#contact', label: 'Contact' }
             ].map((link, index) => (
               <a 

@@ -4,7 +4,7 @@ import { FiArrowRight } from "react-icons/fi"
 const ContactSection = () => {
 
   return (
-    <section className='container mx-auto py-16 px-4 sm:px-6 lg:px-8'>
+    <section id='contact' className='container mx-auto py-16 px-4 sm:px-6 lg:px-8'>
       <div className='bg-lp-blue rounded-2xl overflow-hidden'>
         <div className='relative md:px-16 py-16 px-6 md:py-24'>
 
