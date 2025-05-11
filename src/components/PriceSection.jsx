@@ -15,6 +15,7 @@ const pricingPlans = [
       "Delivered in 5 days",
     ],
     cta: "Get Started",
+    microtext: "No hidden fees. One-time payment.",
     mostPopular: false,
   },
   {
@@ -30,6 +31,7 @@ const pricingPlans = [
       "Delivered in 3 days",
     ],
     cta: "Get Started",
+    microtext: "No hidden fees. One-time payment.",
     mostPopular: true,
   },
   {
@@ -46,6 +48,7 @@ const pricingPlans = [
       "Priority delivery (48h)",
     ],
     cta: "Get Started",
+    microtext: "No hidden fees. One-time payment.",
     mostPopular: false,
   },
 ];
@@ -79,7 +82,12 @@ function PriceSection() {
 
             <div className='max-w-7xl mx-auto grid lg:grid-cols-3 gap-12 lg:gap-8 py-24 px-4 sm:px-6 lg:px-8'>
                 {pricingPlans.map((plan) => (
-                    <div key={plan.title} className='relative border border-slate-200 p-8 shadow-lg bg-white rounded-2xl flex flex-col'>
+                    <div key={plan.title} className={`
+                        ${plan.mostPopular 
+                            ? 'relative border-lp-purple p-8 shadow-lg bg-white rounded-2xl flex flex-col border-2'
+
+                            : 'relative border border-slate-200 p-8 shadow-lg bg-white rounded-2xl flex flex-col'}
+                    `}>
                 
                         <h3 className='text-lg font-Satoshi font-semibold leading-5'>{plan.title}</h3>
                         {plan.mostPopular && (
@@ -87,6 +95,7 @@ function PriceSection() {
                                 Most Popular
                             </p>
                         )}
+                        
                         <p className='mt-4 text-sm text-slate-700 leading-6'>{plan.description}</p>
 
                         <div className='-mx-6 mt-4 bg-slate-50 p-6 rounded-lg'>
@@ -120,6 +129,11 @@ function PriceSection() {
                         >
                             {plan.cta}
                         </a>
+
+                        {/* Microtext */}
+                        <p className='mt-4 -mb-2 text-sm text-slate-500 font-Satoshi text-center'>
+                            {plan.microtext} 
+                        </p>
                     </div>
                 ))}
             </div>
