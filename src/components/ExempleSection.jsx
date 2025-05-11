@@ -28,15 +28,15 @@ const cardsdata = [
 function ExempleSection() {
 
   return (
-    <section id="examples" className="w-full bg-lp-bg py-16 px-4 sm:px-6 md:px-8">
-  <div className="max-w-7xl mx-auto px-4 pt-24 sm:px-6 lg:px-8 text-center">
+    <section id="examples" className="w-full bg-lp-bg py-14 px-4 sm:px-6 md:px-8">
+  <div className="max-w-7xl mx-auto px-4 pt-12 sm:px-6 lg:px-8 text-center">
     <div className="text-center mb-10">
       <h2 className="text-3xl font-semibold font-Satoshi text-gray-800">
         Real use cases. Real results.
       </h2>
     </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid lg:grid-cols-3 gap-12 lg:gap-8">
       {cardsdata.map((card, index) => (
         <div key={index} className="flex flex-col bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
           <img
