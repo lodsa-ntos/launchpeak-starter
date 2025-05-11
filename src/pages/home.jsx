@@ -6,6 +6,7 @@ import PurposeSection from '../components/PurposeSection';
 import FeatureSection from '../components/FeatureSection';
 import ExempleSection from '../components/ExempleSection';
 import PriceSection from '../components/PriceSection';
+import ContactSection from '../components/ContactSection';
 import './../index.css'
 
 function Home() {
@@ -21,6 +22,7 @@ function Home() {
                 <FeatureSection />
                 <ExempleSection />
                 <PriceSection />
+                <ContactSection />
 
             </div>
         </main>
