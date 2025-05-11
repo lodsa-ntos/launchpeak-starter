@@ -56,12 +56,20 @@ function ExempleSection() {
 
     <div className="grid lg:grid-cols-3 gap-12 lg:gap-8">
       {cardsdata.map((card, index) => (
-        <div key={index} className="flex flex-col bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+        <div key={index} className="relative flex flex-col bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
           <img
             className="w-full h-[280px] object-cover transition-transform duration-500 hover:scale-105"
             src={card.img}
             alt={`example-${index + 1}`}
           />
+
+          <div className='absolute right-0 bottom-0 -translate-y-40 -translate-x-6 bg-white rounded-lg shadow-md p-1 flex items-center gap-2'>
+            <a href='#' className='flex gap-1 items-center text-xs font-medium font-Satoshi text-blue-600 hover:underline dark:text-blue-500 hover:translate-x-1 transition-transform duration-200 ease-in-out'>See Full View
+              <svg className="w-3 h-3 -mb-1" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M12.293 2.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L15.586 9H4a1 1 0 110-2h11.586l-3.293-3.293a1 1 0 010-1.414z"/>
+              </svg>
+            </a>
+          </div>
 
           <div className="border-t border-[#EBEBEB] p-5 flex flex-col justify-between flex-1">
 
