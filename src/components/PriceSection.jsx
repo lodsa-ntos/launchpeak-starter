@@ -42,8 +42,8 @@ const pricingPlans = [
       "Unlimited sections/pages",
       "Unique design layout",
       "SEO advanced",
-      "Feature 4",
-      "Feature 5",
+      "Contact form integration",
+      "Priority delivery (48h)",
     ],
     cta: "Get Started",
     mostPopular: false,
@@ -61,7 +61,7 @@ function PriceSection() {
             </h2>
 
             <p className='mt-4 text-lg text-slate-500 font-Satoshi'>
-                Choose an affortable plan that's packed with the best features for angaging your audience, creating customer loyalty, and driving sales.
+                Flexible plans for modern websites — choose yours and get online fast.
             </p>
         </div>
 

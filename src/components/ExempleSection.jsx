@@ -29,7 +29,7 @@ function ExempleSection() {
 
   return (
     <section id="examples" className="w-full bg-lp-bg py-16 px-4 sm:px-6 md:px-8">
-  <div className="max-w-7xl mx-auto">
+  <div className="max-w-7xl mx-auto px-4 pt-24 sm:px-6 lg:px-8 text-center">
     <div className="text-center mb-10">
       <h2 className="text-3xl font-semibold font-Satoshi text-gray-800">
         Real use cases. Real results.
