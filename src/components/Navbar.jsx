@@ -15,7 +15,7 @@ function Navbar() {
   };
 
   return (
-    <nav className='fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-300 shadow-sm'>
+    <nav className='fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-300 shadow-sm leading-relaxed'>
       <div className='w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16'>
         {/* Logo */}
         <div className='flex items-center cursor-pointer'>
@@ -30,7 +30,8 @@ function Navbar() {
           id="nav-menu"
           className={`absolute top-0 ${
             menuOpen ? 'left-0' : 'left-[100%]'
-          } min-h-[100vh] w-full bg-[#3d55cc]/95 backdrop-blur-sm flex items-center justify-center duration-300 ease-in-out overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto`}
+          } min-h-[100vh] w-full bg-[#2D2A55]/95 backdrop-blur-sm flex items-center justify-center duration-300 ease-in-out overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto`
+        }
         >
           <ul className="flex flex-col items-center gap-8 lg:flex-row">
             {[
@@ -43,14 +44,19 @@ function Navbar() {
               <a 
                 key={index} 
                 href={link.href} 
-                onClick={() => {setActiveLink(link.href); closeMenu(); }} 
+                onClick={() => {setActiveLink(link.href); closeMenu() }} 
                 className={`nav-link 
-                  ${activeLink === link.href
-                  ? 'text-blue-700 after:w-full'
-                  : menuOpen
-                    ? 'text-white'
-                    : 'text-gray-600 hover:text-gray-900'
-                }`}
+                  ${
+                    menuOpen
+                     ? activeLink === link.href
+                      ? 'text-blue-400 after:w-full'
+                      : 'text-white'
+
+                    : activeLink === link.href
+                      ? 'text-blue-600 after:w-full'
+                      : 'text-gray-600'
+                  }
+                `}
               >
                 {link.label}
               </a>
