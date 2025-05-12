@@ -16,7 +16,7 @@ const pricingPlans = [
       "Delivered in 5 days",
     ],
     cta: "Get Started",
-    microtext: "No hidden fees. One-time payment.",
+    microtext: "Built with purpose. Delivered with clarity.",
     mostPopular: false,
   },
   {
@@ -32,7 +32,7 @@ const pricingPlans = [
       "Delivered in 3 days",
     ],
     cta: "Get Started",
-    microtext: "No hidden fees. One-time payment.",
+    microtext: "Built with purpose. Delivered with clarity.",
     mostPopular: true,
   },
   {
@@ -55,7 +55,7 @@ const pricingPlans = [
       ,
     ],
     cta: "Get Started",
-    microtext: "No hidden fees. One-time payment.",
+    microtext: "Built with purpose. Delivered with clarity.",
     mostPopular: false,
   },
 ];
