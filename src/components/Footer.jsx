@@ -44,11 +44,11 @@ function Footer() {
               <p className='text-gray-600 mb-2 md:w-3/4 font-medium font-Satoshi'>Find me on:</p>
 
               <div className='flex gap-4'>
-                <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-lp-blue hover:text-white transition-all duration-200'><FaFacebookF className='size-5'/></a>
+                <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-lp-blue hover:text-white transition-all duration-200 hover:scale-110'><FaFacebookF className='size-5'/></a>
 
-                <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-200'><BsTwitterX className='size-5'/></a>
+                <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-200 hover:scale-110'><BsTwitterX className='size-5'/></a>
 
-                <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-lp-blue hover:text-white transition-all duration-200'><FaLinkedinIn className='size-5'/></a>
+                <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-lp-blue hover:text-white transition-all duration-200 hover:scale-110'><FaLinkedinIn className='size-5'/></a>
               </div>
             </div>
 
