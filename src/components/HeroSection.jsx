@@ -40,7 +40,7 @@ function HeroSection() {
                     </button>
                 </div>
 
-                <p className="text-xs text-[#b996ff] py-4 font-Satoshi font-bold">
+                <p className="text-xs text-gray-500 py-4 font-Satoshi font-semibold">
                 Delivered fast. No hidden fees. Ready to convert visitors into buyers.
                 </p>
             </div>

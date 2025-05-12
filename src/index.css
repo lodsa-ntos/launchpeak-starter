@@ -26,7 +26,7 @@ html {
 
 /* Button Hero Section */
 .btn {
-  @apply w-fit flex items-center justify-between gap-2 border border-gray-500 bg-[#6248d6] text-white rounded-md px-5 py-2 hover:shadow-lg hover:shadow-blue-100 focus:border-blue-600 focus:right-2 focus:ring-blue-100 transition-all duration-300;
+  @apply w-fit flex items-center justify-between gap-2 border border-gray-500 bg-[#6248d6] text-white rounded-md px-5 py-2 hover:shadow-lg hover:shadow-blue-100 focus:border-blue-600 focus:right-2 focus:ring-blue-100 hover:scale-105 transition-transform duration-200 ease-in-out ;
 }
   
 .btn span {
