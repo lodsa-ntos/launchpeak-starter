@@ -16,8 +16,8 @@ function HeroSection() {
                 <span className='text-sm font-medium font-Satoshi'>Landing pages for Startups & Creators</span>
             </div>            
             
-            <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold font-Satoshi leading-tight'>
-                <span className='inline-block'>We turn ideas into </span>
+            <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold font-Satoshi leading-tight' translate='no'>
+                <span className='inline-block break-words hyphens-auto'>We turn ideas into </span>
                 
                 <span className='text-[#6248d6] relative inline-block'>pages that sell</span>
             </h1>
