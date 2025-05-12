@@ -8,8 +8,6 @@ import { DiResponsive } from "react-icons/di"
 import { HiMiniDevicePhoneMobile } from "react-icons/hi2"
 import { TbBrandFramerMotion } from "react-icons/tb"
 import { RiSeoLine } from "react-icons/ri"
-import { FaWhatsapp } from "react-icons/fa"
-
 
 const cardsdata = [
   {

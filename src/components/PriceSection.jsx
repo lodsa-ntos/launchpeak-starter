@@ -1,5 +1,6 @@
 import { GiCheckMark } from "react-icons/gi"
 import React from 'react';
+import { FaWhatsapp } from "react-icons/fa"
 
 const pricingPlans = [
   {
@@ -46,7 +47,12 @@ const pricingPlans = [
       "SEO advanced",
       "Contact form integration",
       "Priority delivery (48h)",
-      "+ Dedicated support via WhatsApp",
+      (
+        <>
+        <p className="flex items-center gap-1">+ Dedicated support via WhatsApp <FaWhatsapp className="text-green-500"/></p>
+        </>
+      )
+      ,
     ],
     cta: "Get Started",
     microtext: "No hidden fees. One-time payment.",
@@ -106,6 +112,7 @@ function PriceSection() {
                                 <span className='ml-3 text-4xl text-slate-900'>${plan.price}</span>
                                 <span className='ml-1.5'>{plan.frequency}</span>
                             </p>
+                            <p className="text-gray-500 text-xs">One-time payment. Lifetime access. </p>
                         </div>
 
                         {/* Features */}
