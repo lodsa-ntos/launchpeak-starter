@@ -17,6 +17,8 @@
 
 * 📈 **Basic SEO optimization**
 
+<br>
+
 ## 📚 Available Variations (Examples Section)
 
 Name   | Target Audience   | Tech Stack
@@ -27,6 +29,8 @@ UrbanWear Store | eCommerce          | React.js, Stripe
 
 > 💡 You can easily add or modify variations in src/data/examples.json.
 
+<br>
+
 ## 🚀 Getting Started
 
 >*__#Install dependencies__*<br>
@@ -36,6 +40,7 @@ npm run dev<br><br>
 *__# Build for production__*<br>
 npm run build
 
+<br><br>
 ## 🛠️ Customize for Your Needs
 
 * Update colors and typography in **tailwind.config.js**.
@@ -43,7 +48,7 @@ npm run build
 * Add or remove sections easily from **App.jsx**.
 
 * Content for Examples is fully modular via JSON.
-
+<br><br>
 ## 📄 License
 
 This project is for personal and portfolio use. Feel free to modify it for your own projects. Attribution is appreciated but not required.
