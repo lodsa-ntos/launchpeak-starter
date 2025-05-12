@@ -49,7 +49,10 @@ const pricingPlans = [
       "Priority delivery (48h)",
       (
         <>
-        <p className="flex items-center gap-1">+ Dedicated support via WhatsApp <FaWhatsapp className="text-green-500"/></p>
+        <span className="flex items-center text-sm gap-1 leading-relaxed">
+            + Support via WhatsApp
+            <FaWhatsapp className="text-green-500 shrink-0 w-4 h-4"/>
+        </span>
         </>
       )
       ,
