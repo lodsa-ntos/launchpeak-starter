@@ -21,7 +21,7 @@ const footerLinks = {
     { name: 'Email', href: 'mailto:lodney.santoss@gmail.com' },
     { name: (
       <>
-      Order directly on <span className='w-12 h-12 text-green-500 hover:text-green-600 font-bold'>Fiverr.</span> 
+      <a href='#' target='_blank' className='w-12 h-12 text-green-500 hover:text-green-600 font-bold hover:underline'>Fiverr.</a>
       </>
     ), href: '#' },
   ],
