@@ -15,9 +15,9 @@ const cardsdata = [
     title: "Launch your course with clarity and style",
     description: "Boost your online course signups",
     Badge: [
-      { icon: <FaReact />, label: "React.js", link: "https://react.dev/" },
-      { icon: <RiTailwindCssFill />, label: "TailwindCSS", link: "https://tailwindcss.com/" },
-      { icon: <DiResponsive />, label: "Responsive", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
+      { icon: <FaReact className='w-4 h-4'/>, label: "React.js", link: "https://react.dev/" },
+      { icon: <RiTailwindCssFill className='w-4 h-4'/>, label: "TailwindCSS", link: "https://tailwindcss.com/" },
+      { icon: <DiResponsive className='w-4 h-4'/>, label: "Responsive", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
     ]
   },
   {
@@ -25,9 +25,9 @@ const cardsdata = [
     title: "Transform your space with stunning interior design",
     description: "Elevate your home with our expert design services",
     Badge: [
-      { icon: <FaReact />, label: "React.js", link: "https://react.dev/" },
-      { icon: <HiMiniDevicePhoneMobile />, label: "Mobile-First UI", link: "https://tailwindcss.com/" },
-      { icon: <TbBrandFramerMotion />, label: "Framer Motion", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
+      { icon: <FaReact className='w-4 h-4'/>, label: "React.js", link: "https://react.dev/" },
+      { icon: <HiMiniDevicePhoneMobile className='w-4 h-4'/>, label: "Mobile-First UI", link: "https://tailwindcss.com/" },
+      { icon: <TbBrandFramerMotion className='w-4 h-4'/>, label: "Framer Motion", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
     ]
   },
   {
@@ -35,9 +35,9 @@ const cardsdata = [
     title: "Crafting seamless user experiences",
     description: "Designing intuitive interfaces for your digital products",
     Badge: [
-      { icon: <FaReact />, label: "React.js", link: "https://react.dev/" },
-      { icon: <RiTailwindCssFill />, label: "TailwindCSS", link: "https://tailwindcss.com/" },
-      { icon: <RiSeoLine />, label: "SEO Optimized", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
+      { icon: <FaReact className='w-4 h-4'/>, label: "React.js", link: "https://react.dev/" },
+      { icon: <RiTailwindCssFill className='w-4 h-4'/>, label: "TailwindCSS", link: "https://tailwindcss.com/" },
+      { icon: <RiSeoLine className='w-4 h-4'/>, label: "SEO Optimized", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
     ]
   },
 ]
@@ -56,14 +56,15 @@ function ExempleSection() {
     <div className="grid lg:grid-cols-3 gap-12 lg:gap-8">
       {cardsdata.map((card, index) => (
         <div key={index} className="relative flex flex-col bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-          <img
-            className="w-full h-[280px] object-cover transition-transform duration-500 hover:scale-105"
-            src={card.img}
-            alt={`example-${index + 1}`}
-          />
+          <div className='relative'>
+            <img
+              className="w-full h-[280px] object-cover transition-transform duration-500 hover:scale-105"
+              src={card.img}
+              alt={`example-${index + 1}`}
+            />
 
-          {/* CTA button */}
-          <div className='absolute right-0 bottom-0 -translate-y-40 -translate-x-6 bg-white rounded-lg shadow-md p-1.5 flex items-center gap-2'>
+            {/* CTA button */}
+          <div className='absolute bottom-4 right-4 bg-white rounded-lg shadow-md p-1.5 flex items-center gap-2'>
             <a href='#' className='flex gap-1 items-center text-xs font-medium font-Satoshi text-blue-600 hover:underline dark:text-blue-500 hover:translate-x-1 transition-transform duration-200 ease-in-out'>
               Preview Design
               <svg className="w-3 h-3 -mb-1" fill="currentColor" viewBox="0 0 20 20">
@@ -71,9 +72,10 @@ function ExempleSection() {
               </svg>
             </a>
           </div>
+          </div>
 
           {/* Card content */}
-          <div className="border-t border-[#EBEBEB] p-5 flex flex-col justify-between flex-1">
+          <div className="border-t border-[#EBEBEB] p-5 flex flex-col justify-between flex-1 itemc">
 
             <div className="flex items-center gap-3 flex-wrap">
               {card.Badge && card.Badge.map((badge, index) => (
@@ -107,7 +109,7 @@ const Badge = ({ icon, label, link }) => {
   
   return (
   <a
-    className={`flex items-center gap-0.5 rounded-full px-2.5 py-1 text-xs font-medium font-Satoshi tracking-tight ring-1 ring-inset
+    className={`flex items-center gap-0.5 rounded-full px-2 py-1 text-xs font-medium font-Satoshi tracking-tight ring-1 ring-inset leading-relaxed hover:scale-105 transition-transform duration-200 ease-in-out
 
     ${label === 'React.js' 
       ? 'bg-blue-50 text-blue-600 ring-blue-700/10' 
