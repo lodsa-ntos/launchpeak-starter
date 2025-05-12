@@ -8,6 +8,7 @@ import { DiResponsive } from "react-icons/di"
 import { HiMiniDevicePhoneMobile } from "react-icons/hi2"
 import { TbBrandFramerMotion } from "react-icons/tb"
 import { RiSeoLine } from "react-icons/ri"
+import { FaWhatsapp } from "react-icons/fa"
 
 
 const cardsdata = [
@@ -65,7 +66,8 @@ function ExempleSection() {
 
           {/* CTA button */}
           <div className='absolute right-0 bottom-0 -translate-y-40 -translate-x-6 bg-white rounded-lg shadow-md p-1.5 flex items-center gap-2'>
-            <a href='#' className='flex gap-1 items-center text-xs font-medium font-Satoshi text-blue-600 hover:underline dark:text-blue-500 hover:translate-x-1 transition-transform duration-200 ease-in-out'>See Full View
+            <a href='#' className='flex gap-1 items-center text-xs font-medium font-Satoshi text-blue-600 hover:underline dark:text-blue-500 hover:translate-x-1 transition-transform duration-200 ease-in-out'>
+              Preview Design
               <svg className="w-3 h-3 -mb-1" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M12.293 2.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L15.586 9H4a1 1 0 110-2h11.586l-3.293-3.293a1 1 0 010-1.414z"/>
               </svg>
