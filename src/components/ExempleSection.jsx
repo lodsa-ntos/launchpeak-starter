@@ -16,9 +16,9 @@ const cardsdata = [
     title: "Launch your course with clarity and style",
     description: "Boost your online course signups",
     Badge: [
-      { icon: <FaReact />, color: "blue", label: "React.js", link: "https://react.dev/" },
-      { icon: <RiTailwindCssFill />, color: "cyan", label: "TailwindCSS", link: "https://tailwindcss.com/" },
-      { icon: <DiResponsive />, color: "purple", label: "Responsive", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
+      { icon: <FaReact />, label: "React.js", link: "https://react.dev/" },
+      { icon: <RiTailwindCssFill />, label: "TailwindCSS", link: "https://tailwindcss.com/" },
+      { icon: <DiResponsive />, label: "Responsive", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
     ]
   },
   {
@@ -26,9 +26,9 @@ const cardsdata = [
     title: "Transform your space with stunning interior design",
     description: "Elevate your home with our expert design services",
     Badge: [
-      { icon: <FaReact />, color: "blue", label: "React.js", link: "https://react.dev/" },
-      { icon: <HiMiniDevicePhoneMobile />, color: "cyan", label: "Mobile-First UI", link: "https://tailwindcss.com/" },
-      { icon: <TbBrandFramerMotion />, color: "purple", label: "Framer Motion", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
+      { icon: <FaReact />, label: "React.js", link: "https://react.dev/" },
+      { icon: <HiMiniDevicePhoneMobile />, label: "Mobile-First UI", link: "https://tailwindcss.com/" },
+      { icon: <TbBrandFramerMotion />, label: "Framer Motion", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
     ]
   },
   {
@@ -36,9 +36,9 @@ const cardsdata = [
     title: "Crafting seamless user experiences",
     description: "Designing intuitive interfaces for your digital products",
     Badge: [
-      { icon: <FaReact />, color: "blue", label: "React.js", link: "https://react.dev/" },
-      { icon: <RiTailwindCssFill />, color: "cyan", label: "TailwindCSS", link: "https://tailwindcss.com/" },
-      { icon: <RiSeoLine />, color: "purple", label: "SEO Optimized", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
+      { icon: <FaReact />, label: "React.js", link: "https://react.dev/" },
+      { icon: <RiTailwindCssFill />, label: "TailwindCSS", link: "https://tailwindcss.com/" },
+      { icon: <RiSeoLine />, label: "SEO Optimized", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
     ]
   },
 ]
@@ -63,7 +63,8 @@ function ExempleSection() {
             alt={`example-${index + 1}`}
           />
 
-          <div className='absolute right-0 bottom-0 -translate-y-40 -translate-x-6 bg-white rounded-lg shadow-md p-1 flex items-center gap-2'>
+          {/* CTA button */}
+          <div className='absolute right-0 bottom-0 -translate-y-40 -translate-x-6 bg-white rounded-lg shadow-md p-1.5 flex items-center gap-2'>
             <a href='#' className='flex gap-1 items-center text-xs font-medium font-Satoshi text-blue-600 hover:underline dark:text-blue-500 hover:translate-x-1 transition-transform duration-200 ease-in-out'>See Full View
               <svg className="w-3 h-3 -mb-1" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M12.293 2.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L15.586 9H4a1 1 0 110-2h11.586l-3.293-3.293a1 1 0 010-1.414z"/>
@@ -71,6 +72,7 @@ function ExempleSection() {
             </a>
           </div>
 
+          {/* Card content */}
           <div className="border-t border-[#EBEBEB] p-5 flex flex-col justify-between flex-1">
 
             <div className="flex items-center gap-3 flex-wrap">
@@ -101,15 +103,32 @@ function ExempleSection() {
 }
 
 // Badge Component
-const Badge = ({ icon, color, label, link }) => (
+const Badge = ({ icon, label, link }) => {
+  
+  return (
   <a
-    className={`flex items-center gap-0.5 rounded-full bg-${color}-50 px-2.5 py-1 text-xs font-medium text-${color}-600 ring-1 ring-${color}-700/10 ring-inset font-Satoshi tracking-tight`}
+    className={`flex items-center gap-0.5 rounded-full px-2.5 py-1 text-xs font-medium font-Satoshi tracking-tight ring-1 ring-inset
+
+    ${label === 'React.js' 
+      ? 'bg-blue-50 text-blue-600 ring-blue-700/10' 
+      : label === 'TailwindCSS' 
+      ? 'bg-cyan-50 text-cyan-600 ring-cyan-700/10' 
+      : label === 'Responsive' 
+      ? 'bg-purple-50 text-purple-600 ring-purple-700/10' : label === 'Mobile-First UI' 
+      ? 'bg-gray-50 text-gray-600 ring-gray-700/10'
+      : label === 'Framer Motion'
+      ? 'bg-pink-50 text-pink-600 ring-pink-700/10'
+      : label === 'SEO Optimized'
+      ? 'bg-red-50 text-red-600 ring-red-700/10'
+      : 'bg-gray-50 text-gray-600 ring-gray-700/10'
+    }
+  `}
     href={link}
     target="_blank"
     rel="noopener noreferrer"
   >
     {icon} {label}
   </a>
-);
+);}
 
 export default ExempleSection
