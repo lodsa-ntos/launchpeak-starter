@@ -33,7 +33,7 @@ function HeroSection() {
                     </button>
 
                     <button className="w-fit px-5 py-2">
-                        <a className="inline-flex gap-2 items-center justify-between" href="#examples">
+                        <a className="inline-flex gap-2 items-center justify-between hover:opacity-90 hover:text-indigo-600 hover:translate-x-1 transition-transform duration-200 ease-in-out" href="#examples">
                             <span aria-hidden="true" className='font-medium text-base'>See examples</span>
                         <FaArrowRight className='size-3 -mb-1'/>
                         </a>
