@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { RiMenu4Line, RiCloseLine } from 'react-icons/ri'
+import { motion } from 'framer-motion'
 
-function Navbar() {
+function Navbar()  {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('#home');
@@ -15,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <nav className='fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-300 shadow-sm leading-relaxed'>
+    <motion.nav className='fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-300 shadow-sm leading-relaxed'>
       <div className='w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16'>
         {/* Logo */}
         <div className='flex items-center cursor-pointer'>
@@ -76,7 +77,7 @@ function Navbar() {
         </div>
         
       </div>
-    </nav>
+    </motion.nav>
   )
 }
 
