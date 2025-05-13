@@ -1,7 +1,10 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa6"
 import { PiRocketLaunchFill } from "react-icons/pi"
-import { MdOutlineLocalSee } from "react-icons/md"
+
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
+import { fadeIn, textVariant } from '../utils/motion';
 
 function HeroSection() {
 
@@ -11,22 +14,40 @@ function HeroSection() {
         {/* Hero Section - Left Col */}
         <div className='w-full md:w-1/2 space-y-8'>
 
-            <div className='flex items-center gap-2 bg-gray-50 w-fit px-4 py-2 rounded-full hover:bg-gray-100 transition-colors cursor-pointer font-Satoshi font-medium group'>
-                <span className='text-purple-600 grupo-hover:text-amber-300 group-hover:scale-110 transition-transform'><PiRocketLaunchFill /></span>
-                <span className='text-sm font-medium font-Satoshi'>Landing pages for Startups & Creators</span>
-            </div>            
+            <motion.div
+            variants={fadeIn('right', 0.2)}
+            initial="hidden"
+            whileInView="show"
+            >
+                <div className='flex items-center gap-2 bg-gray-50 w-fit px-4 py-2 rounded-full hover:bg-gray-100 transition-colors cursor-pointer font-Satoshi font-medium group'>
+                    <span className='text-purple-600 grupo-hover:text-amber-300 group-hover:scale-110 transition-transform'><PiRocketLaunchFill /></span>
+                    <span className='text-sm font-medium font-Satoshi'>Landing pages for Startups & Creators</span>
+                </div>
+            </motion.div>            
             
-            <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold font-Satoshi leading-tight' translate='no'>
+            <motion.h1 
+            variants={textVariant(0.3)}
+            initial="hidden"
+            whileInView="show"
+            className='text-4xl md:text-5xl lg:text-6xl font-bold font-Satoshi leading-tight' translate='no'>
                 <span className='inline-block break-words hyphens-auto'>We turn ideas into </span>
                 
                 <span className='text-[#6248d6] relative inline-block'>pages that sell</span>
-            </h1>
+            </motion.h1>
 
-            <p className='text-gray-600 text-lg md:text-xl max-w-xl font-Satoshi'>
+            <motion.p 
+            variants={fadeIn('up', 0.4)}
+            initial="hidden"
+            whileInView="show"
+            className='text-gray-600 text-lg md:text-xl max-w-xl font-Satoshi'>
                 Modern, responsive and conversion-optimised landing pages made with React and Tailwind.
-            </p>
+            </motion.p>
 
-            <div className='gap-3 max-w-md '>
+            <motion.div 
+            variants={fadeIn('up', 0.5)}
+            initial="hidden"
+            whileInView="show"
+            className='gap-3 max-w-md '>
                 <div className='flex items-center gap-2'>
                     <button className="btn">
                         <span>Get Started</span>
@@ -43,7 +64,7 @@ function HeroSection() {
                 <p className="text-xs text-gray-500 py-4 font-Satoshi font-semibold">
                 Delivered fast. No hidden fees. Ready to convert visitors into buyers.
                 </p>
-            </div>
+            </motion.div>
             
         </div>
 
