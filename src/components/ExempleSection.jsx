@@ -8,6 +8,9 @@ import { DiResponsive } from "react-icons/di"
 import { HiMiniDevicePhoneMobile } from "react-icons/hi2"
 import { TbBrandFramerMotion } from "react-icons/tb"
 import { RiSeoLine } from "react-icons/ri"
+import { fadeIn } from '../utils/motion'
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
 
 const cardsdata = [
   {
@@ -53,7 +56,12 @@ function ExempleSection() {
       </h2>
     </div>
 
-    <div className="grid lg:grid-cols-3 gap-12 lg:gap-8">
+    <motion.div 
+    variants={fadeIn('up', 0.5)}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true }}
+    className="grid lg:grid-cols-3 gap-12 lg:gap-8">
       {cardsdata.map((card, index) => (
         <div key={index} className="relative flex flex-col bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
           <div className='relative'>
@@ -75,7 +83,9 @@ function ExempleSection() {
           </div>
 
           {/* Card content */}
-          <div className="border-t border-[#EBEBEB] p-5 flex flex-col justify-between flex-1 itemc">
+          <div 
+          
+          className="border-t border-[#EBEBEB] p-5 flex flex-col justify-between flex-1 itemc">
 
             <div className="flex items-center gap-3 flex-wrap">
               {card.Badge && card.Badge.map((badge, index) => (
@@ -98,7 +108,7 @@ function ExempleSection() {
           </div>
         </div>
       ))}
-    </div>
+    </motion.div>
   </div>
 </section>
   )
