@@ -54,7 +54,25 @@ export function zoomIn(direction, type, delay, duration) {
   }
 }
 
-export function textVariant (delay) {
+export function textVariant(delay) {
+  return {
+    hidden: {
+      y: 50,
+      opacity: 0,
+    },
+    show: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        duration: 1.25,
+        delay,
+      }
+    }
+  }
+}
+
+export function scale(delay) {
   return {
     hidden: {
       scale: 0,

@@ -69,11 +69,15 @@ function HeroSection() {
         </div>
 
         {/* Hero Section - Right Col */}
-        <div className='w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12 '>
+        <motion.div 
+        variants={fadeIn('left', 0.5)}
+        initial="hidden"
+        whileInView="show"
+        className='w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12 '>
             <div className='relative '>
                 <img src="images/hero_mockup5.jpg" alt="hero image" className='relative h-89 z-10 hover:scale-[1.02] transition-transform duration-300'/>
             </div>
-        </div>
+        </motion.div>
     </section>
   )
 }
