@@ -7,17 +7,17 @@ import { SiFiverr } from "react-icons/si"
 
 const footerLinks = {
   company: [
-    { name: 'About Me', href: '#' },
-    { name: 'Terms of Use', href: '#' },
-    { name: 'Privacy Policy', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'About Me', href: '#about' },
+    { name: 'Terms of Use', href: '#terms' },
+    { name: 'Privacy Policy', href: '#privacypolicy' },
+    { name: 'Contact', href: '#contact' },
   ],
   support: [
-    { name: 'FAQs', href: '#' },
-    { name: 'Refund Policy', href: '#' },
+    { name: 'FAQs', href: '#faqs' },
+    { name: 'Refund Policy', href: '#refund' },
   ],
   contact: [
-    { name: 'WhatsApp', href: '#' },
+    { name: 'WhatsApp', href: '#whatsApp' },
     { name: 'Email', href: 'mailto:lodney.santoss@gmail.com' },
     { name: (
       <>
