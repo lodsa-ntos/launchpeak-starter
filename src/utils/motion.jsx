@@ -72,6 +72,42 @@ export function textVariant(delay) {
   }
 }
 
+export function textVariantTwo(delay) {
+  return {
+    hidden: {
+      x: -50,
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        duration: 1.25,
+        delay,
+      }
+    }
+  }
+}
+
+export function textVariantThree(delay) {
+  return {
+    hidden: {
+      x: 50,
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        duration: 1.25,
+        delay,
+      }
+    }
+  }
+}
+
 export function scale(delay) {
   return {
     hidden: {
