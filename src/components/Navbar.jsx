@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { RiMenu4Line, RiCloseLine } from 'react-icons/ri'
 
 import { fadeIn } from '../utils/motion'
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 
 function Navbar()  {
@@ -19,8 +20,10 @@ function Navbar()  {
 
   return (
     <motion.nav
-    variants={fadeIn}
-    
+    variants={fadeIn('down', 0.2)}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true }}
     className='fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-300 shadow-sm leading-relaxed'>
       <div className='w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16'>
         {/* Logo */}

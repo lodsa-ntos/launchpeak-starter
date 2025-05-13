@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "framer-motion": "^12.11.0",
-    "motion": "^12.11.0",
     "pack-and-eat": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
