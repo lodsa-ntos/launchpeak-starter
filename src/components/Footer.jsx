@@ -75,7 +75,7 @@ function Footer() {
         <div className='border-t border-gray-200 mt-12 pt-8'>
           <div className='flex flex-col md:flex-row items-center justify-between gap-4'>
             <p className='text-gray-600 text-sm font-Satoshi'>Your ideas, my code. Together we create impact. 🚀</p>
-            <p className='text-gray-600 text-sm font-Satoshi'>©{new Date().getFullYear} Lodney Santos. All rights reserved.</p>
+            <p className='text-gray-600 text-sm font-Satoshi'>© 2025{new Date().getFullYear} Lodney Santos. All rights reserved.</p>
           </div>
         </div>
       </div>
