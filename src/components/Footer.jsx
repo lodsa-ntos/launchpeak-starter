@@ -21,7 +21,7 @@ const footerLinks = {
     { name: 'Email', href: 'mailto:lodney.santoss@gmail.com' },
     { name: (
       <>
-      <a href='#' target='_blank' className='w-12 h-12 text-green-500 hover:text-green-600 font-bold hover:underline'>Fiverr.</a>
+      <a href='https://www.fiverr.com/lodney_santos' target='_blank' className='w-12 h-12 text-green-500 hover:text-green-600 font-bold hover:underline'>Fiverr.</a>
       </>
     ), href: 'https://www.fiverr.com/lodney_santos' },
   ],
