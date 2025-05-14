@@ -1,6 +1,5 @@
 import React from 'react'
-import { FaFacebookF } from "react-icons/fa"
-import { FaDribbble } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa";
 
@@ -17,7 +16,7 @@ const footerLinks = {
     { name: 'Refund Policy', href: '#refund' },
   ],
   contact: [
-    { name: 'WhatsApp', href: 'https://wa.link/b61yua' },
+    { name: 'WhatsApp', href: 'https://wa.link/7zv7ge' },
     { name: 'Email', href: 'mailto:lodney.santoss@gmail.com' },
     { name: (
       <>
@@ -44,7 +43,7 @@ function Footer() {
               <p className='text-gray-600 mb-2 md:w-3/4 font-medium font-Satoshi'>Find me on:</p>
 
               <div className='flex gap-4'>
-                <a href="https://dribbble.com/LodneySantos" target='_blank' className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-pink-500 hover:text-white transition-all duration-200 hover:scale-110'><FaDribbble  className='size-5'/></a>
+                <a href="https://www.instagram.com/lodextechnologies" target='_blank' className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-[#E1306C] hover:text-white transition-all duration-200 hover:scale-110'><FaInstagram   className='size-5'/></a>
 
                 <a href="https://github.com/lodsa-ntos" target='_blank' className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-200 hover:scale-110'><FaGithub  className='size-5'/></a>
 
@@ -76,7 +75,7 @@ function Footer() {
         <div className='border-t border-gray-200 mt-12 pt-8'>
           <div className='flex flex-col md:flex-row items-center justify-between gap-4'>
             <p className='text-gray-600 text-sm font-Satoshi'>Your ideas, my code. Together we create impact. 🚀</p>
-            <p className='text-gray-600 text-sm font-Satoshi'>© {new Date().getFullYear} Lodney Santos. All rights reserved.</p>
+            <p className='text-gray-600 text-sm font-Satoshi'>© 2025{new Date().getFullYear} Lodney Santos. All rights reserved.</p>
           </div>
         </div>
       </div>
