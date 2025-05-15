@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa"
 const pricingPlans = [
   {
     title: "Starter",
-    price: "29",
+    price: "30",
     currency: "USD",
     frequency: "/One-Time",
     description: "Perfect if you need a clean and effective one-page site to introduce your brand or product.",
@@ -21,7 +21,7 @@ const pricingPlans = [
   },
   {
     title: "Pro ",
-    price: "59",
+    price: "60",
     currency: "USD",
     frequency: "/One-Time",
     description: "Includes extra pages and engaging animations to boost user experience and conversions.",
@@ -37,7 +37,7 @@ const pricingPlans = [
   },
   {
     title: "Premium",
-    price: "99",
+    price: "100",
     currency: "USD",
     frequency: "/One-Time",
     description: "Ideal for showcasing your portfolio or service with style and clarity.",
