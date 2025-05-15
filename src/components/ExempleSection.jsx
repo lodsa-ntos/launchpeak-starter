@@ -29,8 +29,8 @@ const cardsdata = [
     description: "Elevate your home with our expert design services",
     Badge: [
       { icon: <FaReact className='w-4 h-4'/>, label: "React.js", link: "https://react.dev/" },
-      { icon: <HiMiniDevicePhoneMobile className='w-4 h-4'/>, label: "Mobile-First UI", link: "https://tailwindcss.com/" },
-      { icon: <TbBrandFramerMotion className='w-4 h-4'/>, label: "Framer Motion", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
+      { icon: <HiMiniDevicePhoneMobile className='w-4 h-4'/>, label: "Mobile-First UI", link: "https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/" },
+      { icon: <TbBrandFramerMotion className='w-4 h-4'/>, label: "Framer Motion", link: "https://motion.dev/" }
     ]
   },
   {
@@ -40,7 +40,7 @@ const cardsdata = [
     Badge: [
       { icon: <FaReact className='w-4 h-4'/>, label: "React.js", link: "https://react.dev/" },
       { icon: <RiTailwindCssFill className='w-4 h-4'/>, label: "TailwindCSS", link: "https://tailwindcss.com/" },
-      { icon: <RiSeoLine className='w-4 h-4'/>, label: "SEO Optimized", link: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" }
+      { icon: <RiSeoLine className='w-4 h-4'/>, label: "SEO Optimized", link: "https://www.seoptimer.com/" }
     ]
   },
 ]
