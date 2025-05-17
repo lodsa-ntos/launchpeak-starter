@@ -15,7 +15,10 @@ const pricingPlans = [
       "Clean, minimal UI",
       "Delivered in 5 days",
     ],
-    cta: "Get Started",
+    cta:{
+        link: "https://www.fiverr.com/lodney_santos/design-a-modern-responsive-landing-page",
+        label: "Get Started",
+    },
     microtext: "Built with purpose. Delivered with clarity.",
     mostPopular: false,
   },
@@ -31,7 +34,10 @@ const pricingPlans = [
       "SEO basic",
       "Delivered in 3 days",
     ],
-    cta: "Get Started",
+    cta:{
+        link: "https://www.fiverr.com/lodney_santos/design-a-modern-responsive-landing-page",
+        label: "Get Started",
+    },
     microtext: "Built with purpose. Delivered with clarity.",
     mostPopular: true,
   },
@@ -57,7 +63,10 @@ const pricingPlans = [
       )
       ,
     ],
-    cta: "Get Started",
+    cta:{
+        link: "https://wa.link/7zv7ge",
+        label: "Get Started",
+    },
     microtext: "Built with purpose. Delivered with clarity.",
     mostPopular: false,
   },
@@ -130,7 +139,7 @@ function PriceSection() {
                         </ul>
 
                         {/* CTA Button */}
-                            <a href="" className={`mt-8 block px-6 py-4 text-sm font-semibold font-Satoshi leading-4 text-center rounded-lg 
+                            <a href={plan.cta.link} target="_blank" rel="noopener noreferrer" className={`mt-8 block px-6 py-4 text-sm font-semibold font-Satoshi leading-4 text-center rounded-lg 
                                 
                                 ${
                                     plan.mostPopular 
@@ -139,7 +148,7 @@ function PriceSection() {
                                 }
                             `}
                         >
-                            {plan.cta}
+                            {plan.cta.label}
                         </a>
 
                         {/* Microtext */}
