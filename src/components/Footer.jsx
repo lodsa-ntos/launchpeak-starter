@@ -35,8 +35,10 @@ function Footer() {
           {/* Logo */}
           <div className='lg:col-span-4'>
               <div className='flex items-center cursor-pointer mb-6'>
-                <span className='text-xl font-Lobster text-lp-purple opacity-85 hover:opacity-100 transition-opacity'>Launch</span>
-                <span className='text-xl font-Lobster text-blue-600 opacity-100 hover:opacity-85 transition-opacity'>Peak.</span>
+                <a href="#home">
+                  <span className='text-xl font-Lobster text-lp-purple opacity-85 hover:opacity-100 transition-opacity'>Launch</span>
+                  <span className='text-xl font-Lobster text-blue-600 opacity-100 hover:opacity-85 transition-opacity'>Peak.</span>
+                </a>
               </div>
               <p className='text-gray-600 mb-6 md:w-3/4 font-Satoshi'>Build with purpose. High-converting landing pages start here. Let’s make it happen.🌐</p>
 
