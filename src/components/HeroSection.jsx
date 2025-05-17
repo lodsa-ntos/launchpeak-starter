@@ -50,7 +50,7 @@ function HeroSection() {
             className='gap-3 max-w-md '>
                 <div className='flex items-center gap-2'>
                     <button className="btn">
-                        <span>Get Started</span>
+                        <a href="https://wa.link/7zv7ge"><span>Get Started</span></a>
                     </button>
 
                     <button className="w-fit px-5 py-2">
