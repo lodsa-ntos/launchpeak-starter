@@ -62,7 +62,7 @@ function HeroSection() {
                 </div>
 
                 <p className="text-xs text-gray-500 py-4 font-Satoshi font-semibold">
-                Delivered fast. No hidden fees. Ready to convert visitors into buyers
+                Delivered fast. No hidden fees. Ready to convert visitors into buyers.
                 </p>
             </motion.div>
             
