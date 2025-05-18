@@ -7,6 +7,8 @@
 - React
 - TailwindCSS
 - Deploy via Vercel
+
+🔗 [Check it out here](https://launchpeak-teuusername.vercel.app)
 <br><br>
 ## 📦 Features
 
