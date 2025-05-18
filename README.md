@@ -1,7 +1,12 @@
-# 🌐 LaunchPeak
+# 🌐 LaunchPeak | Modern & Responsive Landing Page
 
 > A modern, responsive, and conversion-optimized landing page template built with **React.js, Tailwind CSS, and Framer Motion**. Perfect for SaaS startups, creators, and eCommerce businesses looking for a clean and impactful online presence.
 
+
+### 🛠️ Stack:
+- React
+- TailwindCSS
+- Deploy via Vercel
 <br><br>
 ## 📦 Features
 
@@ -27,7 +32,6 @@ TaskFlow CRM | SaaS Startups         | React.js, API
 Visionary Studio | Creators/Influencers          | Next.js, Framer Motion
 UrbanWear Store | eCommerce          | React.js, Stripe
 
-> 💡 You can easily add or modify variations in src/data/examples.json.
 
 <br>
 
