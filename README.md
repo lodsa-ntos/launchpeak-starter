@@ -48,18 +48,21 @@
 <td width="33%" align="center">
 
 ### 💼 **SaaS Startups**
+
 Launch your app with a page that converts trials to customers
 
 </td>
 <td width="33%" align="center">
 
 ### 🎭 **Creators & Influencers**
+
 Showcase your brand and capture leads beautifully
 
 </td>
 <td width="33%" align="center">
 
 ### 🛍️ **eCommerce**
+
 Drive sales with product pages that convert
 
 </td>
@@ -116,6 +119,7 @@ npm run build
 ## ⚙️ Customization Made Simple
 
 ### 🎨 **Change Your Brand Colors**
+
 ```javascript
 // tailwind.config.js
 colors: {
@@ -125,6 +129,7 @@ colors: {
 ```
 
 ### 📝 **Update Content**
+
 ```javascript
 // All content is in easy-to-edit objects
 const heroContent = {
@@ -135,6 +140,7 @@ const heroContent = {
 ```
 
 ### 🧩 **Add/Remove Sections**
+
 ```jsx
 // src/pages/home.jsx - Mix and match components
 <HeroSection />
