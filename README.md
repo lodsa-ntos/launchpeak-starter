@@ -14,6 +14,8 @@
 
 <img src="/public/images/bg-launchpeak-herosection.jpg" alt="LaunchPeak Preview" style="width: 400px; height: 300px;">
 
+<img src="/public/images/launchpeak-home-hover.png" alt="LaunchPeak Preview" style="width: 400px; height: 300px;">
+
 </div>
 
 ---
