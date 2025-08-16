@@ -11,7 +11,8 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)](https://www.framer.com/motion/)
 
-![LaunchPeak Preview](https://via.placeholder.com/800x400/6248d6/ffffff?text=LaunchPeak+Preview)
+
+<img src="/public/images/bg-launchpeak-herosection.jpg" alt="LaunchPeak Preview" style="width: 300px; height: 200px;">
 
 </div>
 
