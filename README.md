@@ -12,7 +12,7 @@
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)](https://www.framer.com/motion/)
 
 
-<img src="/public/images/bg-launchpeak-herosection.jpg" alt="LaunchPeak Preview" style="width: 500px; height: 300px;">
+<img src="/public/images/bg-launchpeak-herosection.jpg" alt="LaunchPeak Preview" style="width: 400px; height: 300px;">
 
 </div>
 
